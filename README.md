@@ -22,16 +22,13 @@ Na telefonu držte příslušná velká tlačítka. Plyn, řízení a nitro lze 
 
 Checkpoint každých 1,4 km prodlouží čas. Jízda nad 180 km/h zvyšuje násobič. Těsné předjetí dává body a doplní nitro. Silné nárazy ubírají stav karoserie; při zničení nebo vypršení času jízda končí.
 
-## Pozdější nahrání do rostakr/erko
+## Publikace přes GitHub Pages
 
-1. Rozbalte archiv.
-2. Nahrajte **obsah složky `erko`** do hlavní úrovně repozitáře `rostakr/erko`, větev `main`. Nenahrávejte pouze soubor ZIP; hlavní `index.html` musí být v kořeni repozitáře.
-3. Zachovejte také složky `src`, `scripts` a `.github`.
-4. V repozitáři otevřete **Settings → Pages → Source → GitHub Actions**.
-5. V **Actions → Publish ERKO RIDER → Run workflow** spusťte publikování, pokud po prvním nahrání ještě neproběhlo.
-6. Výsledný odkaz zobrazí úspěšná úloha a stránka Settings → Pages.
+Repozitář obsahuje hotovou hru i workflow **Publish ERKO RIDER**. Při pushi do `main` workflow sestaví samostatný `index.html`, připraví publikační artefakt a nasadí jej přes GitHub Pages. Workflow při prvním běhu umí Pages pro repozitář automaticky inicializovat.
 
-Připravený workflow publikuje pouze sestavenou hru a licenci. Aktuální zdroje a samostatná hra jsou součástí tohoto repozitáře. Stav zveřejnění ověřte na kartě Actions. GitHub Pages pro soukromý repozitář vyžaduje odpovídající plán; soukromí repozitáře archiv nemění.
+Pro ruční kontrolu otevřete **Actions → Publish ERKO RIDER**. Výsledný veřejný odkaz je po úspěšném nasazení dostupný také v **Settings → Pages**.
+
+Připravený workflow publikuje pouze sestavenou hru a licenci. Aktuální zdroje a samostatná hra jsou součástí tohoto repozitáře. GitHub Pages pro soukromý repozitář vyžaduje odpovídající plán; tento repozitář je veřejný.
 
 Oficiální postup: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
 
